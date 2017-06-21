@@ -1,0 +1,392 @@
+CHARSET "UTF-8";
+
+/* Estilizando o LightBox */
+div#imgs .row > .column {
+  padding: 0px 8px;
+}
+
+h4#caminho {
+  width: 1060px;
+  margin: 12px auto;
+  margin-top: 30px;
+}
+
+div#imgs .row {
+  height: 1750px;
+  width: 1060px;
+  margin: 20px auto 20px auto;
+  padding-top: 0px;
+  box-shadow: 0px 0px 4px 4px rgba(0,0,0,.7);
+}
+
+h1 {
+  color: white;
+}
+
+h3#sub {
+  color: white;
+  font-size: 25pt; 
+  text-align: center;
+  background-color: rgb(51, 51, 51);
+  width: 1067px;
+  margin: 0px auto;
+  padding: 30px 250px;
+  margin-top: -8px;
+  margin-bottom: -15px;
+  box-shadow: 0px 0px 4px 4px rgba(0,0,0,.7);
+}
+
+#myMap{
+  display: inline-block;
+  margin: 10px auto;
+}
+
+#img1 {
+  margin: 0px auto;
+  padding-bottom: -20px;
+  height: 700px;
+}
+
+#slide1 #description {
+  width: 100%;
+  position: absolute;
+  
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Imagem Principal da page*/
+.row .column {
+  display: inline;
+  margin: 0px;
+}
+
+.column img {
+  margin-bottom: -5px;
+  width: 353.5px;
+  margin-top: -5px;
+  margin-right: -4px;
+  border: 1px solid black; 
+  height: 250px;
+}
+
+.column2 img {
+  width: 400px;
+  height: 250px;
+  display: inline-block;
+  float: left;
+}
+
+#column1 {
+  position: relative;
+  margin: 0px auto;
+  width: 1060px;
+}
+
+#column1 img {
+  width: 100%;
+}
+
+#column1 h1#tel {
+  position: absolute;
+  background-color: #38347d;
+  box-shadow: 1px 1px 1px 1px black;
+  font-size: 15pt;
+  bottom: 10px;
+  right: 300px;
+  width: 170px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#column1 h1#tel2 {
+  display: none;
+  position: absolute;
+  font-size: 18px;
+  bottom: 12px;
+  right: 300px;
+  width: 170px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#column1 h1#contact {
+  position: absolute;
+  background-color: #800000;
+  box-shadow: 1px 1px 1px 1px black;
+  font-size: 15pt;
+  bottom: 10px;
+  right: 120px;
+  width: 170px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#subscription {
+  position: absolute;
+  display: block;
+  left: 23px;
+  bottom: 5px;
+  background-color: black;
+  opacity: 0.6;
+  width: 95%;
+  height: 150px;
+}
+
+#column1 #preco {
+  position: absolute;
+  bottom: 30px;
+  left: 50px;
+  font-size: 30pt;
+}
+
+#column1 #infos {
+  display: block;
+  position: absolute;
+  right: 150px;
+  bottom: 75px;
+  color: white;
+  text-align: center;
+}
+
+#column1 #infos p {
+  display: inline-block;
+  padding: 0px 15px;
+}
+
+.barra {
+  border-right: 1px solid white;
+}
+
+iframe {
+  width: 100%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 50px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: black;
+  margin: auto;
+  padding: -10px;
+  width: 90%;
+  max-width: 1200px;
+  height: 800px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  background-color: #800000;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -30px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+img.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s
+}
+
+/* Estilizando o map */
+div#imgs .row h2 {
+  text-align: center;
+  margin-top: 50px;
+  border-top: 1px solid #696969;
+  padding-top: 20px;
+}
+
+/* Estilizando a descrição */
+ul#descricao {
+  padding: 30px;
+  width: 1000px;
+  margin: 0px auto;
+  box-shadow: 0px 0px 4px 4px rgba(0,0,0,.4);
+  color: black;
+  font-size: 15pt;  
+}
+
+li {
+  display: inline-block;
+  width: 250px;
+  margin-left: 50px;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 20%;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn,.signupbtn {
+    float: left;
+    width: 50%;
+}
+
+/* Add padding to container elements */
+.containerr {
+    padding: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 50%; /* Could be more or less, depending on screen size */
+    height: 60%;
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    color: #000;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+        width: 100%;
+    }
+}

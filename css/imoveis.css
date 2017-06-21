@@ -1,0 +1,236 @@
+@CHARSET "UTF-8";
+
+.conteudo2 {
+	height: 1650px;
+	width: 1300px;
+	margin: 0px auto 20px auto;
+	background-color: #323c4c;
+}
+
+.conteudo2 h1 {
+	background-color: #800000;
+	display: block;
+	padding: 10px 20px;
+	color: white;
+	margin: 0px;
+	margin-top: 35px;
+	margin-bottom: -10px;
+	text-align: center;
+	font-size: 30px;
+}
+
+.container2 {
+	border-bottom-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+}
+
+/* Estilizando o caminho */
+#caminho {
+	width: 1300px;
+	margin: 10px auto;
+	height: 20px;
+	margin-top: 30px;
+	margin-bottom: -30px;
+}
+
+/* Estlizando o imóveis2 */
+section#imoveis2 {
+	height: 1550px;
+	margin: -20px auto 10px auto;
+}
+
+section#imoveis2 ul {
+	height: 100%;
+	overflow: hidden;
+	list-style: none;
+	padding: 30px;
+}
+
+section#imoveis2 ul li {
+	float: left;
+	width: 30%;
+	height: 450px;
+	text-align: center;
+	padding: 0px;
+	margin: 5px 0px;
+	position: relative;
+	border: 5px solid #800000; 
+	box-shadow: 1px 1px 3px rgba(0,0,0,.4);
+	transition: all 0.8s ease;
+	margin-left: 40px;
+	list-style-type: none;
+}
+
+section#imoveis2 li#img4,section#imoveis2 li#img5,section#imoveis2 li#img6, section#imoveis2 li#img7, section#imoveis2 li#img8, section#imoveis2 li#img9 {
+	margin-top: 55px;
+}
+
+section#imoveis2 ul li:hover {
+	box-shadow: 2px 2px 5px 2px rgba(0,0,0,.6);
+}
+
+section#imoveis2 ul li span {
+	text-align: center;
+	background-color: rgba(0,0,0,.6);
+	color: white;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	height: 70px;
+	width: 100%;
+	transition: all 0.8s ease;
+}
+
+section#imoveis2 ul li p {
+	margin-bottom: -5px;
+	margin-top: 0px;
+}
+
+section#imoveis2 h1{
+	display: inline-block;
+	margin-bottom: 0px;
+	margin-top: -50px;
+	font-size: 25px;
+	padding: 2px 2px 2px 2px;
+	box-shadow: 0px 0px 1px 1px black;
+	background-color: white;
+	color: black;
+
+}
+
+section#imoveis2 a {
+	position: absolute;
+	bottom: -40px;
+	left: 110px;
+	display: block;
+	margin-top: 10px;
+}
+
+section#imoveis2 a {
+	text-decoration: none;
+}
+
+section#imoveis2 a div#button {
+	margin-left: -10px;
+	padding: 6px 30px;
+	font-size: 20px;
+	background: linear-gradient(#B22222, #800000);
+	color: white;
+}
+
+section#imoveis2 ul li#img1 {
+	background: url(../img/produtos/pag1/casa1/img1.jpg) no-repeat;
+	background-position: 50% 0%;
+	background-size: 530px 400px;
+	background-color: white;
+}
+
+section#imoveis2 ul li#img1:hover {
+	background-position: 100% 0%;
+	background-size: 530px 400px;
+	z-index: 99;
+}
+
+section#imoveis2 ul li#img2 {
+	background: url(../img/produtos/pag1/casa2/img1.jpg) no-repeat;
+	background-position: 50% 0%;
+	background-size: 530px 400px;
+	background-color: white;
+}
+
+section#imoveis2 ul li#img2:hover {
+	background-position: 100% 0%;
+	background-size: 530px 400px;
+	z-index: 99;
+}
+
+section#imoveis2 ul li#img3 {
+	background: url(../img/produtos/pag1/casa3/img1.jpg) no-repeat;
+	background-position: 50% 0%;
+	background-size: 530px 400px;
+	background-color: white;
+}
+
+section#imoveis2 ul li#img3:hover {
+	background-position: 100% 0%;
+	background-size: 530px 400px;
+	z-index: 99;
+}
+
+section#imoveis2 ul li#img4 {
+	background: url(../img/produtos/pag1/casa4/img1.jpg) no-repeat;
+	background-position: 50% 0%;
+	background-size: 530px 400px;
+	background-color: white;
+}
+
+section#imoveis2 ul li#img4:hover {
+	background-position: 100% 0%;
+	background-size: 530px 400px;
+	z-index: 99;
+}
+
+section#imoveis2 ul li#img5 {
+	background: url(../img/produtos/pag1/casa5/img1.jpg) no-repeat;
+	background-position: 50% 0%;
+	background-size: 530px 400px;
+	background-color: white;
+}
+
+section#imoveis2 ul li#img5:hover {
+	background-position: 100% 0%;
+	background-size: 530px 400px;
+	z-index: 99;
+}
+
+section#imoveis2 ul li#img6 {
+	background: url(../img/produtos/pag1/casa6/img1.jpg) no-repeat;
+	background-position: 50% 0%;
+	background-size: 530px 400px;
+	background-color: white;
+}
+
+section#imoveis2 ul li#img6:hover {
+	background-position: 100% 0%;
+	background-size: 530px 400px;
+	z-index: 99;
+}
+
+section#imoveis2 ul li#img7 {
+	background: url(../img/produtos/pag1/casa7/img1.jpg) no-repeat;
+	background-position: 50% 0%;
+	background-size: 530px 400px;
+	background-color: white;
+}
+
+section#imoveis2 ul li#img7:hover {
+	background-position: 100% 0%;
+	background-size: 530px 400px;
+	z-index: 99;
+}
+
+section#imoveis2 ul li#img8 {
+	background: url(../img/produtos/pag1/casa8/img1.jpg) no-repeat;
+	background-position: 50% 0%;
+	background-size: 530px 400px;
+	background-color: white;
+}
+
+section#imoveis2 ul li#img8:hover {
+	background-position: 100% 0%;
+	background-size: 530px 400px;
+	z-index: 99;
+}
+
+section#imoveis2 ul li#img9 {
+	background: url(../img/produtos/pag1/casa9/img1.jpg) no-repeat;
+	background-position: 50% 0%;
+	background-size: 530px 400px;
+	background-color: white;
+}
+
+section#imoveis2 ul li#img9:hover {
+	background-position: 100% 0%;
+	background-size: 530px 400px;
+	z-index: 99;
+}

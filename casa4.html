@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Inácio Imobiliária - Casa 4</title>
+	<meta charset="utf-8">
+	<meta name="author" content="Gustavo Souza">
+	<meta name="description" content="Inácio Imóveis - Negócio Imobiliária">
+	<meta name="keywords" content="Inácio Imóveis - Negócio Imobiliária, Inacio Imoveis, Imobiliária em Extremoz, Loteamento, Casas, Apartamentos, casas em extremoz, terrenos em extremoz, imobiliaria em extremoz, imoveis inacio, imobiliaria, inácio moveis, casas para alugar, casas para alugar em Extremoz, imoveis, www.inacioimoveis.com.br">
+	<link href="https://fonts.googleapis.com/css?family=Baloo" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<link rel="stylesheet" type="text/css" href="css/casa.css">
+	<link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
+	<link rel="icon" href="img/icon.png">
+	<script src="js/myScript.js"></script>
+	<script src="js/casas.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAc7wL9pOgWSRc8wQ3R35raj7wkcGWPlHc&callback=myMap"></script>
+	<script src="js/jquery-3.2.1.js"></script>
+	<script>
+		function funcao() {
+			var divTel = document.getElementById("tel");
+			var tel = document.getElementById("tel2");
+
+			divTel.style.display = "none";
+			tel.style.display = "block";
+		}
+		// Get the modal
+		var modal = document.getElementById('id01');
+
+		// When the user clicks anywhere outside of the modal, close it
+		window.onclick = function(event) {
+		    if (event.target == modal) {
+		        modal.style.display = "none";
+		    }
+		}
+	</script>
+</head>
+<body onload="myMap();">
+	<div id="cabecalho">
+		<header class="container">
+			<img src="img/inaimoveis.png" alt="Inácio Imóveis">
+			<h1><span>Inácio</span><br>Imobiliária</h1>
+
+			<div id="corretor">
+				<img src="img/contato.png" alt="Corretor Online">
+				<h3>Corretor Online</h3>
+			</div>
+			<p id="creci" style="color: white; font-size: 15px; text-align: center;">CRECI: 3937-17° REGIÃO</p>
+
+			<img id="familia" src="img/familia-feliz.png" alt="familia">
+		</header>
+
+		<nav id="menu">
+			<ul class="container">
+				<li><a href="index.html">PÁGINA INICIAL</a></li>
+				<li><a href="quem_somos.html">QUEM SOMOS</a></li>
+				<li><a href="imoveis.html">IMÓVEIS</a></li>
+				<li><a href="fale_conosco.html">FALE CONOSCO</a></li>
+			</ul>
+		</nav>
+	</div>
+	
+	<!-- Caminho -->
+	<h4 id="caminho" style="display:block;"><a href="index.html">Página Inicial</a> / <a href="imoveis.html">Imóveis</a> / <span style="color: black;">Casa 4</span></h4>
+	
+	<!-- Implementando o ligthBox-->
+	<h3 id="sub">Loteamento Vênus - Rua Sol</h3>
+	<div id="imgs">
+		<div class="row">
+			<div id="column1">
+			    <img  id="img1" src="img/produtos/pag1/casa4/img1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+				<div id="subscription">
+					<h3 style="color: white;margin-left: 30px;">Apartir de:</h3>
+				</div>
+				<h1 id="preco" style="margin: 0px 0px 0px 50px; ">R$ 92,000</h1>
+				<div id="infos">
+					<p class="barra" style="font-size: 15px;">Área das casas<br><span style="font-size: 20px;">62,47m²</span></p>
+					<p style="font-size: 15px;">Quartos<br><span style="font-size: 20px;">2</span></p>
+				</div>
+
+				<a href="#cabecalho"><h1 id="tel" onclick="funcao()">Ver Telefone</h1></a>
+				<h1 id="tel2">(84) 3279-2781</h1>
+				<h1 id="contact" onclick="document.getElementById('id01').style.display='inline-block'">Contatar</h1>
+				<div id="id01" class="modal">
+				  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+				  <form class="modal-content animate" action="/action_page.php">
+				    <div class="containerr">
+				    	<label for="nome">Nome: </label>
+				    	<input type="text" placeholder="Nome Completo" name="Nome" id="nome" required>
+				    	<label>Email</label>
+				    	<input type="text" placeholder="Email" name="email" required>
+				    	<label for="cpf">CPF: </label>
+				    	<input type="text" placeholder="Apenas Números" name="cpf" required>
+						<br><label for="textarea_id">Insira sua Mensagem: </label><br>
+						<textarea id="textarea_id" rows="5" cols="50" maxlength="140" placeholder="..."></textarea>
+
+				      <div class="clearfix">
+				        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancelar</button>
+				        <button type="submit" class="signupbtn">Enviar</button>
+				      </div>
+				    </div>
+				  </form>
+				</div>
+			</div>
+			<div class="column">
+			    <img src="img/produtos/pag1/casa4/2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+			    <img src="img/produtos/pag1/casa4/3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+			    <img src="img/produtos/pag1/casa4/4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+			</div>
+
+			<h2>Localização</h2>
+			<div id="map" style="height:400px;">
+
+			</div>
+
+			<h2>Descrição</h2>
+			<ul id="descricao">
+				<li>Área total até: 200m²</li>
+				<li>Quartos: 2</li>
+				<li>Armários Embutidos</li>
+				<li>Área espaçosa</li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- LigthBox FullScreen -->
+	<div id="myModal" class="modal">
+	  <span class="close cursor" onclick="closeModal()">&times;</span>
+	  <div class="modal-content">
+
+	  	<center><h1>Casa Redidencial Rua Almirante</h1></center>
+	    <div id="slide1" class="mySlides">
+	    	<div class="numbertext">1 / 4</div>
+	      	<img src="img/produtos/pag1/casa4/img1.jpg" style="width:100%">
+	    </div>
+
+	    <div class="mySlides">
+	      <div class="numbertext">2 / 4</div>
+	        <img src="img/produtos/pag1/casa4/2.jpg" style="width:100%">
+	    </div>
+
+	    <div class="mySlides">
+	      <div class="numbertext">3 / 4</div>
+	        <img src="img/produtos/pag1/casa4/3.jpg" style="width:100%">
+	    </div>
+
+	    <div class="mySlides">
+	      <div class="numbertext">4 / 4</div>
+	        <img src="img/produtos/pag1/casa4/4.jpg" style="width:100%">
+	    </div>
+
+	    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+	    <div class="caption-container">
+	      <p id="caption"></p>
+	    </div>
+
+	    <div class="column2">
+	      <img class="demo" src="img/produtos/pag1/casa4/img1.jpg" width="287" height="200" onclick="currentSlide(1)" alt="Frente">
+	    </div>
+
+	    <div class="column2">
+	      <img class="demo" src="img/produtos/pag1/casa4/2.jpg" onclick="currentSlide(2)" alt="Sala de Estar">
+	    </div>
+
+	    <div class="column2">
+	      <img class="demo" src="img/produtos/pag1/casa4/3.jpg" onclick="currentSlide(3)" alt="Cozinha">
+	    </div>
+
+	    <div class="column2">
+	      <img class="demo" src="img/produtos/pag1/casa4/4.jpg" onclick="currentSlide(4)" alt="Quintal">
+	    </div>
+	  </div>
+	</div>
+
+	<footer id="rodape">
+		<h4 id="by">&copy; Site produzido por <b>AUGE Web</b></h4>
+		<p>Fone: (84) 999547084 / (84) 987489113<br> Email: gustavo.souza1156.gg@gmail.com</p>
+	</footer>
+</body>	
+</html>

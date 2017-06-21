@@ -1,0 +1,101 @@
+@CHARSET "UTF-8";
+
+/* Estlizando o conteúdo */
+.conteudo {
+	height: 3150px;
+	margin: 50px auto 10px auto;
+	border-left: 2px solid #A9A9A9;
+	border-right: 2px solid #A9A9A9;
+	box-shadow: 1px 1px 3px 3px white;
+	padding: 10px;
+	background-color: #323c4c;
+}
+
+.conteudo h4#caminho {
+	position: absolute;
+	top: -45px;
+	left: 0px;
+	color: #808080;
+}
+
+.conteudo div#descri {
+	background: #800000;
+	box-shadow: 0px 0px 4px 1px #696969; 
+	display: inline-block;
+	max-width: 1100px;
+	padding: 15px;
+	height: 400px;
+	font-size: 20px;
+	text-align: justify;
+}
+
+.conteudo h1#local {
+	margin-top: 40px;
+}
+
+.conteudo div#diferenciais {
+	box-shadow: 0px 0px 4px 1px #696969; 
+	width: 1100px;
+	padding: 30px;
+	margin: 0px auto;
+	margin-top: 100px;
+	font-size: 20px;
+	color: white;
+}
+
+div#sobreInacio {
+	text-align: center;
+}
+
+div#sobreInacio img#banner-inacio {
+	width: 101.6%;
+	margin-left: -10px;
+	margin-top: 60px;
+	box-shadow: 0px 0px 2px 2px black;
+}
+
+div#sobreInacio h2 {
+	font-size: 35px;
+	color: white;
+	display: inline-block;
+	width: 1050px;
+}
+
+div#sobreInacio div#empresa {
+	color: white;
+	position: relative;
+	width: 1050px;
+	margin: 0px auto;
+	margin-top: -20px;
+	padding: 10px;
+	padding-top: 30px;
+	height: 500px;
+	box-shadow: 0px 0px 4px 1px #696969; 
+}
+
+div#sobreInacio div img {
+	position: absolute;
+	right: -25px;
+	bottom: -30px;
+	height: 450px;
+} 
+
+div#sobreInacio div h1#bio {
+	width: 400px;
+	text-align: center;
+	margin-left: 80px;
+}
+
+div#sobreInacio div p {
+	width: 400px;
+	margin-left: 80px;
+}
+
+div#mudaCor {
+	background-color: rgb(51, 51, 51);
+	padding: 20px;
+	color: white;
+	margin: -2px -10px;
+	margin-bottom: 30px;
+	padding-bottom: 40px;
+}

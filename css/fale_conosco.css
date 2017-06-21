@@ -1,0 +1,106 @@
+@CHARSET "UTF-8";
+
+/* Estlizando o conteúdo do Fale Conosco */
+.fale-conosco {
+	height: 1350px;
+	margin-top: 50px;
+	margin-bottom: 20px;
+	background-color: white;
+	border-left: 2px solid #A9A9A9;
+	border-right: 2px solid #A9A9A9;
+	border-bottom: 2px solid #A9A9A9;
+	box-shadow: 1px 1px 3px 3px white;
+	padding: 10px;
+}
+
+.fale-conosco h4#caminho {
+	position: absolute;
+	top: -42px;
+	left: 0px;
+	color: #808080;
+	font-size: 15px;
+}
+
+.fale-conosco h1#title {
+	background: linear-gradient(to right, #800000, #8B0000);
+	margin: 0px -10px;
+	margin-top: -10px;
+	padding-top: 20px;
+	border-bottom: 2px solid #DCDCDC;
+	color: white;
+	font-size: 30px;
+	text-indent: 20px;
+}
+
+/* Estilizando o formulário */
+.fale-conosco form {
+
+}
+
+.fale-conosco form fieldset {
+	width: 700px;
+	font-weight: bold;
+	margin: 20px 20px;
+
+	box-shadow: 0px 0px 3px 0px black;
+}
+
+.fale-conosco form fieldset legend {
+	font-weight: bolder;
+	font-size: 20px;
+	padding-bottom: 20px;
+}
+
+.fale-conosco form fieldset input {
+	width: 250px;
+	margin-bottom: 15px;
+}
+
+.fale-conosco form button {
+	margin: 0px auto;
+	width: 150px;
+	margin-left: 45%;
+	line-height: 35px;
+}
+
+/* Estilizando ícones de redes sociais */
+#redes{
+	position: absolute;
+	width: 400px;
+	margin: 0px 800px;
+	border: 1px solid black;
+	padding: 20px 0px;
+	text-align: center;
+}
+
+section#fale-conosco a {
+	display: inline-block;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+/* instagram */
+.fa-instagram {
+    background: #125688;
+    color: white;
+    margin-left: 10px;
+}

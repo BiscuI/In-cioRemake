@@ -1,0 +1,674 @@
+@CHARSET "UTF-8";
+
+body {
+	background: linear-gradient(white, #DCDCDC);
+}
+
+.container {
+	position: relative;
+	margin: 0 auto;
+	max-width: 1300px;
+}
+
+/* Estilizando o cabeçalho */
+div#cabecalho {
+	background-color: #8B0000;
+	height: 200px;
+	margin: -25px -10px 0px -10px;
+}
+
+header {
+	background-color: #8B0000;
+	height: 160px;
+	margin: 0px auto 0px auto; 
+}
+
+header img {
+	margin-top: 15px;
+	margin-left: 50px;
+}
+
+header h1 {
+	text-shadow: 4px 4px 4px #38347d;
+	font-family: 'Archivo Black', sans-serif;
+	position: absolute;
+	top: 30px;
+	left: 21%;
+	color: white;
+	text-align: center;
+}
+
+header h1 span {
+	font-size: 30pt;
+}
+
+header p#creci {
+	position: absolute;
+	bottom: 10px;
+	right: 38%;
+}
+
+div#corretor {
+	position: absolute;
+	box-shadow: 1px 1px 3px black;
+	max-height: 100px;
+	border-top-left-radius: 25px;
+	border-bottom-right-radius: 25px;
+	top: 30px;
+	right: 35%;
+	padding: 5px;
+}
+
+div#corretor img {
+	margin-top: 5px;
+	margin-left: 0px;
+}
+
+div#corretor h3 {
+	display: inline;
+	margin-left: 14px;
+	margin-top: 25px;
+	color: white;
+	float: right;
+}
+
+header img#familia {
+	position: absolute;
+	top: 10px;
+	right: 0px;
+	margin-top: 5px;
+}
+
+nav#menu {
+  	border: 1px solid rgba(0,0,0,.5);
+  	width: 100%;
+  	background: linear-gradient(to right, #D3D3D3, white);
+  	box-shadow: 2px 2px 5px rgba(0,0,0,.6);
+  	color: white;
+  	height: 50px;
+  	font-family: 'Baloo', cursive;
+  	font-size: 15pt;
+}
+
+nav#menu ul {
+	margin-top: 10px;
+	text-align: right;
+}
+
+nav#menu ul li {
+	display: inline;
+	margin: 0px 0px;
+	padding: 11px 0px;
+	border-left: 1px solid rgba(0,0,0,.3);
+	margin-right: -5px;
+}
+
+nav#menu ul li a {
+	transition: all 0.7s;
+	text-decoration: none; 
+	color: black;
+	padding: 10px;
+	transition: all 0.6s;
+}
+
+nav#menu ul li a:hover {
+	text-shadow: 1px 1px 1px white;
+	color: white;
+	background-color: #38347d;
+}
+
+nav#menu ul li {
+	border-right: 1px solid rgba(0,0,0,.5);
+}
+
+/* Classe que mantém o menu fixado no topo */
+.menuFixo {
+	position: fixed;
+	top: 0;
+	z-index: 100;
+}
+
+/* Estilizando o botao de Scroll to TOP */
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #800000; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 15pt;
+    z-index: 99;
+}
+
+#myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
+
+/* Estilizando o picture 1 */
+div#pictures {
+	background-color: rgba(139,0,0,.4);
+	margin: 0px -10px;
+	margin-top: 10px;
+	padding: -5px 0px;
+	position: relative;
+}
+
+div#pictures img {
+	opacity: 0.6;
+	filter: blur(5px);
+	width: 100%;
+}
+
+div#pictures h1 {
+	color: white;
+	text-shadow: 1px 1px 2px black;
+	position: absolute;
+	bottom: 5px;
+	left: 40px;
+	font-size: 25px;
+}
+
+/* Estilizando o slideshow */
+* {
+	box-sizing: border-box
+}
+
+/* Slideshow container */
+
+div#slideshow {
+	background-color: #323c4c;
+	margin: 0px -10px 0px -10px;
+	padding: 5px;
+}
+
+div#slideshow h1 {
+	margin-top: 10px;
+	margin-right: -5px;
+	margin-left: -5px;
+	padding-bottom: -10px;
+	color: white;
+	font-size: 30pt;
+	text-shadow: 2px 2px 4px black;
+	text-align: center;
+}
+
+.slideshow-container {
+	max-width: 1300px;
+	position: relative;
+	margin: auto;
+	margin-top: 10px;
+}
+
+.mySlides {
+	display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    background-color: rgba(255,255,255,.6);
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin: -60px 0px;
+    padding: 16px;
+    color: black;
+    font-weight: bold;
+    font-size: 40pt;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+}
+
+/* Caption text */
+.text {
+    background-color: rgba(0,0,0,.4);
+    color: white;
+    font-size: 20pt;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 6px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor:pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+/* Estilizando a imagem que vem logo após o slideshow */
+div#imagem {
+	position: relative;
+	margin-right: -10px;
+	margin-left: -10px;
+}
+
+div#imagem h1#background {
+	background-image: url(../img/parque.jpg);
+	height: 500px;
+	max-width: 100%;
+	margin: 0px auto 0px auto;
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+}
+
+div#imagem h1#text1 {
+	position: absolute;
+	top: 40px;
+	font-size: 35px;
+	margin-left: 15px;
+	color: white;
+	text-shadow: 2px 2px 2px black;	
+}
+
+div#imagem h3#text2 {
+	position: absolute;
+	top: 100px;
+	margin-left: 15px;
+	color: white;
+	text-shadow: 2px 2px 2px black;
+}
+
+/* Estilizando o Banner Promocao */
+.banner {
+	position: relative;
+	max-width: 1300px;
+	margin: 100px 0px 50px -10px;
+	background-color: #800000;
+	display: block;
+	border-top-right-radius: 100px;
+	border-bottom-right-radius: 100px;
+	padding: 10px 35px;
+	color: white;
+	text-shadow: 1px 1px 3px black;
+	box-shadow: 1px 1px 15px white;
+}
+
+.banner h1, .banner h3#venda-banner {
+	text-align: right;
+	margin-right: 100px;
+}
+
+.banner img {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 300px;
+}
+
+.banner2 {
+	position: relative;
+	max-width: 1300px;
+	margin: 120px 0px 50px 0px;
+	background-color: #800000;
+	display: block;
+	border-top-right-radius: 100px;
+	border-bottom-right-radius: 100px;
+	padding: 10px 35px;
+	color: white;
+	text-shadow: 1px 1px 3px black;
+	box-shadow: 1px 1px 15px white;
+}
+
+.banner2 h1, h3 {
+	text-align: left;
+	margin-left: 100px;
+}
+
+.banner2 img {
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+}
+
+/* Estilizando o conteúdo */
+.conteudo {
+	display: block;
+	height: 2400px;
+	margin: 0px -10px 0px -10px;	
+}
+
+/* Estilizando o conteúdo IMÓVEL */
+.container2 {
+	position: relative;
+	margin: 10px auto;
+	width: 1300px;
+}
+
+.conteudo .container2 h1 {
+	background-color: #800000;
+	display: inline-block;
+	padding: 10px 20px;
+	max-width: 300px;
+	color: white;
+	margin: 0px;
+	margin-top: 35px;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	text-align: center;
+	font-size: 20px;
+}
+
+.conteudo .container2 div#topo_layout {
+	background-color: #800000;
+	height: 30px;
+}
+
+.conteudo .container2 div#topo_layout img {
+	position: absolute;
+	top: 7px;
+	right: -8px;
+}
+
+section#imoveis {
+	height: 1050px;
+	margin: -20px auto 10px auto;
+	box-shadow: inset 0px 0px 8px 2px rgba(0,0,0,.5);
+	background-color: #323c4c;
+}
+
+section#imoveis ul {
+	height: 100%;
+	overflow: hidden;
+	list-style: none;
+	padding: 30px;
+}
+
+section#imoveis ul li {
+	float: left;
+	width: 30%;
+	height: 450px;
+	text-align: center;
+	padding: 0px;
+	margin: 5px 0px;
+	position: relative;
+	border: 5px solid #800000; 
+	box-shadow: 1px 1px 3px rgba(0,0,0,.4);
+	transition: all 0.8s ease;
+	margin-left: 40px;
+}
+
+section#imoveis li#img4,section#imoveis li#img5,section#imoveis li#img6 {
+	margin-top: 45px;
+}
+
+section#imoveis ul li:hover {
+	box-shadow: 2px 2px 5px 2px rgba(0,0,0,.6);
+}
+
+section#imoveis ul li span {
+	text-align: center;
+	background-color: rgba(0,0,0,.6);
+	color: white;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	height: 70px;
+	width: 100%;
+	transition: all 0.8s ease;
+	line-height: 30px;
+}
+
+section ul li p {
+	margin-bottom: -5px;
+	margin-top: 0px;
+}
+
+section#imoveis h1{
+	display: inline-block;
+	margin-bottom: 0px;
+	margin-top: -50px;
+	font-size: 25px;
+	padding: 2px 2px 2px 2px;
+	box-shadow: 0px 0px 1px 1px black;
+	border-radius: 15px;
+	background-color: white;
+	color: black;
+
+}
+
+section#imoveis a {
+	position: absolute;
+	bottom: -40px;
+	left: 110px;
+	display: block;
+	margin-top: 10px;
+}
+
+section#imoveis a {
+	text-decoration: none;
+}
+
+section#imoveis a div#button {
+	margin-left: -5px;
+	padding: 6px 30px;
+	font-size: 20px;
+	background: linear-gradient(#B22222, #800000);
+	color: white;
+}
+
+section#imoveis ul li#img1 {
+	background: url(../img/produtos/index/img1.jpg) no-repeat;
+	background-position: 50% 0%;
+	background-size: 530px 400px;
+	background-color: white;
+}
+
+section#imoveis ul li#img1:hover {
+	background-position: 100% 0%;
+	background-size: 530px 400px;
+	z-index: 99;
+}
+
+section#imoveis ul li#img2 {
+	background: url(../img/produtos/index/img2.jpg) no-repeat;
+	background-position: 50% 0%;
+	background-size: 530px 400px;
+	background-color: white;
+}
+
+section#imoveis ul li#img2:hover {
+	background-position: 100% 0%;
+	background-size: 530px 400px;
+	z-index: 99;
+}
+
+section#imoveis ul li#img3 {
+	background: url(../img/produtos/index/img3.jpg) no-repeat;
+	background-position: 50% 0%;
+	background-size: 530px 400px;
+	background-color: white;
+}
+
+section#imoveis ul li#img3:hover {
+	background-position: 100% 0%;
+	background-size: 530px 400px;
+	z-index: 99;
+}
+
+section#imoveis ul li#img4 {
+	background: url(../img/produtos/index/img4.jpg) no-repeat;
+	background-position: 50% 0%;
+	background-size: 530px 400px;
+	background-color: white;
+}
+
+section#imoveis ul li#img4:hover {
+	background-position: 100% 0%;
+	background-size: 530px 400px;
+	z-index: 99;
+}
+
+section#imoveis ul li#img5 {
+	background: url(../img/produtos/index/img5.jpg) no-repeat;
+	background-position: 50% 0%;
+	background-size: 530px 400px;
+	background-color: white;
+}
+
+section#imoveis ul li#img5:hover {
+	background-position: 100% 0%;
+	background-size: 530px 400px;
+	z-index: 99;
+}
+
+section#imoveis ul li#img6 {
+	background: url(../img/produtos/index/img6.jpg) no-repeat;
+	background-position: 50% 0%;
+	background-size: 530px 400px;
+	background-color: white;
+}
+
+section#imoveis ul li#img6:hover {
+	background-position: 100% 0%;
+	background-size: 530px 400px;
+	z-index: 99;
+}
+
+/* Estilizando o mapa */
+.conteudo h1#local {
+	text-indent: 20px;
+}
+
+/* Estilizando a seção Empresa */
+.conteudo .container2 section#empresa {
+	position: relative;
+	display: inline-block;
+	height: 300px;
+	margin: 30px 20px 20px 30px;
+	background: linear-gradient(#B22222, #800000);
+	width: 550px;
+	padding: 10px 15px;
+	box-shadow: 2px 2px 5px black;
+}
+
+section#empresa h2 {
+	text-align: center;
+	color: white;
+}
+
+section#empresa p#p1 {
+	margin-left: 15px;
+	text-align: justify;
+	color: white;
+}
+
+section#empresa button {
+	position: absolute;
+	right: 40%;
+	bottom: 10px;
+	font-size: 20px;
+}
+
+/*Estilizando a seção Contato */
+.conteudo .container2 section#contato {
+	position: relative;
+	float: right;
+	height: 300px;
+	margin: 30px 20px 20px 80px;
+	background: linear-gradient(#B22222, #800000);
+	width: 550px;
+	padding: 10px 25px;
+	box-shadow: 2px 2px 5px black;
+	display: inline-block;
+}
+
+section#contato h2 {
+ 	text-align: center;
+ 	color: white;
+ }
+
+section#contato p#p2 {
+	margin-left: 15px;
+	text-align: justify;
+	color: white;
+}
+
+section#contato button {
+	position: absolute;
+	right: 40%;
+	bottom: 10px;
+	font-size: 20px;
+}
+
+/* Estilizando o rodapé */
+footer {
+	background-color: #323c4c;
+	position: relative;
+	height: 80px;
+	margin: 0px -10px -10px -10px;
+	color: white;
+	border-top: 1px solid gray;
+}
+
+footer#rodape h4#by {
+	margin-left: 30px;
+	font-size: 12pt;
+}
+
+footer#rodape p {
+	position: absolute;
+	bottom: 5px;
+	right: 30px;
+	line-height: 25px;
+	font-size: 12pt;
+}

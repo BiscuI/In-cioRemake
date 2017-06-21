@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Inácio Imobiliária - Fale Conosco</title>
+	<meta charset="utf-8">
+	<meta name="author" content="Gustavo Souza">
+	<meta name="description" content="Inácio Imóveis - Negócio Imobiliária">
+	<meta name="keywords" content="Inácio Imóveis - Negócio Imobiliária, Inacio Imoveis, Imobiliária em Extremoz, Loteamento, Casas, Apartamentos, casas em extremoz, terrenos em extremoz, imobiliaria em extremoz, imoveis inacio, imobiliaria, inácio moveis, casas para alugar, casas para alugar em Extremoz, imoveis, www.inacioimoveis.com.br">
+	<link href="https://fonts.googleapis.com/css?family=Baloo" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<link rel="stylesheet" type="text/css" href="css/fale_conosco.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
+	<link rel="icon" href="img/icon.png">
+	<script src="js/myScript.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAc7wL9pOgWSRc8wQ3R35raj7wkcGWPlHc&callback=myMap"></script>
+	<script src="js/jquery-3.2.1.js"></script>
+	<script>
+		$(function(){   
+			var nav = $('#menu');  
+			var text = $('#text1');
+			var text3 = $('#text2');
+			$(window).scroll(function () { 
+				if ($(this).scrollTop() > 200) { 
+					nav.addClass("menuFixo");
+					text.addClass("newText1");
+					text3.addClass("newText2"); 
+				} else { 
+					nav.removeClass("menuFixo"); 
+					text.removeClass("newText1");
+					text3.removeClass("newText2");
+				} 
+			});  
+		});
+		function myMap2() {
+    		var mapCanvas = document.getElementById("map2");
+    		var mapOptions = {
+        	center: new google.maps.LatLng(-5.706503, -35.303989),
+        	zoom: 10
+    		};
+    		var map = new google.maps.Map(mapCanvas, mapOptions);
+		}
+	</script>
+</head>
+<body onload="myMap2();">
+	<div id="cabecalho">
+		<header class="container">
+			<img src="img/inaimoveis.png" alt="Inácio Imóveis">
+			<h1><span>Inácio</span><br>Imobiliária</h1>
+
+			<div id="corretor">
+				<img src="img/contato.png" alt="Corretor Online">
+				<h3>Corretor Online</h3>
+			</div>
+			<p id="creci" style="color: white; font-size: 15px; text-align: center;">CRECI: 3937-17° REGIÃO</p>
+
+			<img id="familia" src="img/familia-feliz.png" alt="familia">
+		</header>
+
+		<nav id="menu">
+			<ul class="container">
+				<li><a href="index.html">PÁGINA INICIAL</a></li>
+				<li><a href="quem_somos.html">QUEM SOMOS</a></li>
+				<li><a href="imoveis.html">IMÓVEIS</a></li>
+				<li><a href="fale_conosco.html">FALE CONOSCO</a></li>
+			</ul>
+		</nav>
+	</div>
+
+
+	<section class="fale-conosco container">
+		<h4 id="caminho"><a href="index.html">Página Inicial</a> / <span style="color: black;">Fale Conosco</span></h4>
+		<h1 id="title">Fale Conosco</h1>
+		<h2>Dúvidas? Envie-nos uma mensagem:</h2>
+		<form>
+			<fieldset>
+
+
+		<div id="redes">
+			<h1>Siga-nos nas redes sociais</h1>
+			<a href="https://www.facebook.com/In%C3%A1cio-Im%C3%B3veis-1202696909797089/" target="_blank" class="fa fa-facebook"></a><a href="#" class="fa fa-instagram"></a>
+		</div>
+				<legend>Informações Pessoais</legend>
+
+				<label for="nome_id">Nome: </label>
+				<br><input id="nome_id" type="text" name="nome" placeholder="Digite o seu nome">
+				<br>
+
+				<label for="sobrenome_id">Sobrenome: </label>
+				<br><input id="sobrenome_id" type="text" name="nome" placeholder="Digite o seu sobrenome">
+				<br>
+
+				<label for="email_id">Email: </label>
+				<br><input id="email_id" type="email" name="email" placeholder="Digite o seu email">
+			</fieldset>
+		
+			<fieldset>
+				<legend>Mensagem</legend>
+
+				<br><label for="textarea_id">Insira sua Mensagem: </label>
+				<textarea id="textarea_id" rows="5" cols="50" maxlength="140" placeholder="..."></textarea>
+			</fieldset>
+			<button type="button">Enviar</button>
+
+			<hr>
+			<h1 id="local" style="margin-top: 150px;text-align: center;">Loja Física</h1>
+			<iframe id="myMap" src="https://www.google.com/maps/embed?pb=!1m0!3m2!1spt-BR!2sbr!4v1494508011152!6m8!1m7!1s0N_fE4LsOIdyRzTIaPY1qA!2m2!1d-5.703726253463238!2d-35.28965437122449!3f331.0392595618947!4f-15.757059336673692!5f0.7820865974627469" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+		</form>
+	</section>
+
+	<footer id="rodape">
+		<h4 id="by">&copy; Site produzido por <b>AUGE Web</b></h4>
+		<p>Fone: (84) 999547084 / (84) 987489113<br> Email: gustavo.souza1156.gg@gmail.com</p>
+	</footer>
+</body>	
+</html>

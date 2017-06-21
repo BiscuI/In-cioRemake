@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Inácio Imobiliária - Quem Somos</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="icon" href="img/icon.png">
+	<link href="https://fonts.googleapis.com/css?family=Baloo" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
+	<script src="js/myScript.js"></script>
+	<script src="js/jquery-3.2.1.js"></script>
+	<script>
+		$(function(){   
+			var nav = $('#menu');  
+			var text = $('#text1');
+			var text3 = $('#text2');
+			$(window).scroll(function () { 
+				if ($(this).scrollTop() > 200) { 
+					nav.addClass("menuFixo");
+					text.addClass("newText1");
+					text3.addClass("newText2"); 
+				} else { 
+					nav.removeClass("menuFixo"); 
+					text.removeClass("newText1");
+					text3.removeClass("newText2");
+				} 
+			});  
+		});
+	</script>
+</head>
+<body onload="myMap2();">
+	<div id="cabecalho">
+		<header class="container">
+			<img src="img/inaimoveis.png" alt="Inácio Imóveis">
+			<h1><span>Inácio</span><br>Imobiliária</h1>
+
+			<div id="corretor">
+				<img src="img/contato.png" alt="Corretor Online">
+				<h3>Corretor Online</h3>
+			</div>
+			<p id="creci" style="color: white; font-size: 15px; text-align: center;">CRECI: 3937-17° REGIÃO</p>
+
+			<img id="familia" src="img/familia-feliz.png" alt="familia">
+		</header>
+
+		<nav id="menu">
+			<ul class="container">
+				<li><a href="index.html">PÁGINA INICIAL</a></li>
+				<li><a href="quem_somos.html">QUEM SOMOS</a></li>
+				<li><a href="imoveis.html">IMÓVEIS</a></li>
+				<li><a href="fale_conosco.html">FALE CONOSCO</a></li>
+			</ul>
+		</nav>
+	</div>
+
+	<section class="conteudo container">
+		<h4 id="caminho"><a href="index.html">Página Inicial</a> / <span style="color: black;">Quem Somos</span></h4>
+		
+		<div id="sobreInacio">
+			<h2>Fundador</h2>
+			<div id="empresa">
+				<img src="img/inacio.png" alt="Inácio">
+				<h1 id="bio">José Carlos Inácio</h1>
+				<p style="text-align: justify;">Inácio, desde 1990 tem a missão de trazer a felicidade as famílias. Foi em Santa Catarina, no Espírito Santo, que o empresário recebeu os primeiros sorrisos de casa própria. Inácio também deixou seu legado em Rondônia e em outros estados do Brasil, mas foi em Extremoz, cidade da área metropolitana de Natal, no Rio Grande Norte, que ele, desde 2004, estacionou seu estabelecimento. Já foram mais de 500 casas vendidas, Inácio ajudou a construir e crescer bairros dentro de Extremoz. O bairro do Moinho é um dos seus exemplos de dedicação ao seu Trabalho: Aquela extensa área, hoje povoada, iniciou-se com as próprias mãos  do seu Inácio, onde demarcou e setorizou o espaço e junto com algumas parceirias urge-se um dos maiores e principais bairro deste município.</p>
+			</div>
+			<img id="banner-inacio" src="img/fachada-painel.png" alt="cartao inacio imoveis">
+			<div id="mudaCor">
+				<h1 style="font-size: 35px;border-bottom: 1px solid white;width: 1000px;margin: 20px auto;">Entrevista concedida por Inácio ao Jornal de Extremoz</h1>
+				<iframe width="1016" height="815" src="artigo.html" frameborder="0" allowfullscreen></iframe>
+				<h1 style="font-size: 35px; ">Vídeo Promocional</h1>
+				<hr>
+				<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Finacio.imobiliaia%2Fvideos%2F156599184791585%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+			</div>
+		</div>
+
+		<div id="diferenciais">
+			<h1>Diferenciais:</h1>
+			<hr>
+			<ul>
+				<li>Menor preço do varejo.</li>
+				<li>Atendimento via telefone, email, whatsapp e facebook.</li>
+				<li>Traga um cliente para a Inácio Imóveis e ganhe R$1000,00 reais.</li>
+				<li>Atendimento de Domingo a Domingo.</li>
+				<li>Empresa 100% confiável.</li>
+				<li>Mais de 20 anos no mercado imobiliário.</li>
+			</ul>
+		</div>
+	</section>
+
+	<footer id="rodape">
+		<h4 id="by">&copy; Site produzido por <b>AUGE Web</b></h4>
+		<p>Fone: (84) 999547084 / (84) 987489113<br> Email: gustavo.souza1156.gg@gmail.com</p>
+	</footer>
+</body>
+</html>

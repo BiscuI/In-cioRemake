@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Inácio Imobiliária - Imóveis</title>
+	<meta charset="utf-8">
+	<meta name="author" content="Gustavo Souza">
+	<meta name="description" content="Inácio Imóveis - Negócio Imobiliária">
+	<meta name="keywords" content="Inácio Imóveis - Negócio Imobiliária, Inacio Imoveis, Imobiliária em Extremoz, Loteamento, Casas, Apartamentos, casas em extremoz, terrenos em extremoz, imobiliaria em extremoz, imoveis inacio, imobiliaria, inácio moveis, casas para alugar, casas para alugar em Extremoz, imoveis, www.inacioimoveis.com.br">
+	<link href="https://fonts.googleapis.com/css?family=Baloo" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<link rel="stylesheet" type="text/css" href="css/imoveis.css">
+	<link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
+	<link rel="icon" href="img/icon.png">
+	<script src="js/jquery-3.2.1.js"></script>
+	<script>
+		$(function(){   
+			var nav = $('#menu');  
+			var text = $('#text1');
+			var text3 = $('#text2');
+			$(window).scroll(function () { 
+				if ($(this).scrollTop() > 200) { 
+					nav.addClass("menuFixo");
+					text.addClass("newText1");
+					text3.addClass("newText2"); 
+				} else { 
+					nav.removeClass("menuFixo"); 
+					text.removeClass("newText1");
+					text3.removeClass("newText2");
+				} 
+			});  
+		});
+	</script>
+</head>
+<body>
+	<div id="cabecalho">
+		<header class="container">
+			<img src="img/inaimoveis.png" alt="Inácio Imóveis">
+			<h1><span>Inácio</span><br>Imobiliária</h1>
+
+			<div id="corretor">
+				<img src="img/contato.png" alt="Corretor Online">
+				<h3>Corretor Online</h3>
+			</div>
+			<p id="creci" style="color: white; font-size: 15px; text-align: center;">CRECI: 3937-17° REGIÃO</p>
+
+			<img id="familia" src="img/familia-feliz.png" alt="familia">
+		</header>
+
+		<nav id="menu">
+			<ul class="container">
+				<li><a href="index.html">PÁGINA INICIAL</a></li>
+				<li><a href="quem_somos.html">QUEM SOMOS</a></li>
+				<li><a href="imoveis.html">IMÓVEIS</a></li>
+				<li><a href="fale_conosco.html">FALE CONOSCO</a></li>
+			</ul>
+		</nav>
+	</div>
+
+	<h4 id="caminho"><a href="index.html">Página Inicial</a> / <span style="color: black;">Imóveis</span></h4>
+	<div class="conteudo2">	
+		<h1 id>Casas / Condomínios / Apartamentos / Terrenos</h1>
+		<div class="container2">		
+			<section id="imoveis2">
+				<ul>
+					<li id="img1"><span><p>Casa à venda apartir de </p><br><h1>R$ 100,000</h1></span><a href="casa1.html">
+					<div id="button">Saiba mais</div></a></li>
+					
+					<li id="img2"><span><p>Casa à venda apartir de </p><br><h1>R$ 96,000</h1></span><a href="casa2.html">
+					<div id="button">Saiba mais</div></a></li>
+					
+					<li id="img3"><span><p>Casa à venda apartir de </p><br><h1>R$ 92,000</h1></span><a href="casa3.html">
+					<div id="button">Saiba mais</div></a></li>
+					
+					<li id="img4"><span><p>Casa à venda apartir de </p><br><h1>R$ 92,000</h1></span><a href="casa4.html">
+					<div id="button">Saiba mais</div></a></li>
+					
+					<li id="img5"><span><p>Casa à venda apartir de </p><br><h1>R$ 94,000</h1></span><a href="casa5.html">
+					<div id="button">Saiba mais</div></a></li>
+					
+					<li id="img6"><span><p>Casa à venda apartir de </p><br><h1>R$ 92,000</h1></span><a href="casa6.html">
+					<div id="button">Saiba mais</div></a></li>
+
+					<li id="img7"><span><p>Casa à venda apartir de </p><br><h1>R$ 210,000</h1></span><a href="casa7.html">
+					<div id="button">Saiba mais</div></a></li>
+					
+					<li id="img8"><span><p>Casa à venda apartir de </p><br><h1>R$ 143,000</h1></span><a href="casa8.html">
+					<div id="button">Saiba mais</div></a></li>
+					
+					<li id="img9"><span><p>Casa à venda apartir de </p><br><h1>R$ 120,000</h1></span><a href="casa9.html">
+					<div id="button">Saiba mais</div></a></li>
+				</ul>
+			</section>
+		</div>
+	</div>
+
+	<footer id="rodape">
+		<h4 id="by">&copy; Site produzido por <b>AUGE Web</b></h4>
+		<p>Fone: (84) 999547084 / (84) 987489113<br> Email: gustavo.souza1156.gg@gmail.com</p>
+	</footer>
+</body>
+</html>
